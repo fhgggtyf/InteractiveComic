@@ -17,17 +17,20 @@ body {
 }
 
 .img {
+  width: 75%;
+  height: 75%
+}
+
+.img-cover {
   width: 100%;
   height: 100%;
 }
 
 .panel {
   position: relative;
-  width: 75%;
-
-  top: 150px;
-  left: 12.5%;
-
+  width: 100%;
+  height: 100vh;
+  text-align: center;
 }
 
 #book-title {
@@ -69,10 +72,14 @@ body {
   left:400px;
 }
 
+.placeholder{
+  position: relative;
+  height:50vh;
+}
+
 #panel-1 {}
 
 #panel-2 {
-  top: 350px;
 }
 
 #panel-3 {
