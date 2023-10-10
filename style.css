@@ -1,10 +1,9 @@
 body {
-  background-color: rgb(6, 5, 23);
-
+  background-color: rgb(26, 24, 64);
+  overflow-x: hidden;
 }
 
 #nav {
-
   width: 100%;
   height: 30px;
 
@@ -18,8 +17,8 @@ body {
 }
 
 .img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .panel {
@@ -32,20 +31,42 @@ body {
 }
 
 #book-title {
-  position:absolute;
-  top:70px;
-  left:35%;
-  color:white;
+  z-index: 2;
+  position: absolute;
+  top: 70px;
+  left: 35%;
+  color: white;
   text-align: center;
   font-size: 70px;
 }
 
 #cover-emily {
-  width: 700px;
-  height: 700px;
+  z-index:2;
+  width: 490px;
+  height: 620px;
 
-  position: relative;
+  position: absolute;
+  top: 90px;
   left: -110px;
+}
+
+#cover-palm {
+  z-index:0;
+  width: 900px;
+  height: 500px;
+
+  position: absolute;
+  top: 120px;
+  right: 0px;
+}
+
+#cover-monster {
+  z-index: 1;
+  width:800px;
+  height:800px;
+
+  position: absolute;
+  left:30px;
 }
 
 #panel-1 {}
