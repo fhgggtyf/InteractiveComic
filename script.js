@@ -1,3 +1,9 @@
+let firstPageElement = document.getElementById('firstpage');
+let currentTop1 = parseInt(firstPageElement.style.top);
+
+let secondPageElement = document.getElementById('secondpage');
+let currentTop2 = parseInt(secondPageElement.style.top);
+
 document.addEventListener('scroll', scrollEvent);
 
 function scrollEvent() {
@@ -10,13 +16,13 @@ function scrollEvent() {
 	let height = window.innerHeight;
 	// Calculate which section the user has scrolled to
 	// parseInt() function used to ignore decimals
-	let sectionNum = parseInt((pos / height) * 2);
+	let sectionNum = (pos / height) * 2;
 
-	if (sectionNum >= 2 && sectionNum<=4) {
-		document.getElementById("firstpage").style.top += (pos - height);
+	if (sectionNum >= 2 && sectionNum <= 4) {
+		firstPageElement.style.top = (currentTop1 + (pos - height)) + 'px';
 	}
-	else if(sectionNum>=6 && sectionNum<=8){
-		document.getElementById("secondpage").style.top += (pos - height);
+	else if(sectionNum>=5.25 && sectionNum<=90){
+		secondPageElement.style.top = (currentTop1 + (pos - 2.75*height)) + 'px';
 	}
 
 }

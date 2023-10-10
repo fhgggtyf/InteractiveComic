@@ -17,8 +17,8 @@ body {
 }
 
 .img {
+  position: relative;
   width: 75%;
-  height: 75%
 }
 
 .img-cover {
@@ -49,7 +49,7 @@ body {
   height: 620px;
 
   position: absolute;
-  top: 305px;
+  top: 255px;
   left: -110px;
 }
 
@@ -59,7 +59,7 @@ body {
   height: 700px;
 
   position: absolute;
-  top: 120px;
+  top: 70px;
   right: 0px;
 }
 
@@ -75,11 +75,6 @@ body {
 .placeholder{
   position: relative;
   height:50vh;
-}
-
-#panel-1 {}
-
-#panel-2 {
 }
 
 #panel-3 {
