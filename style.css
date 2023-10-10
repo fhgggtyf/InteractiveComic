@@ -31,6 +31,23 @@ body {
 
 }
 
+#book-title {
+  position:absolute;
+  top:70px;
+  left:35%;
+  color:white;
+  text-align: center;
+  font-size: 70px;
+}
+
+#cover-emily {
+  width: 700px;
+  height: 700px;
+
+  position: relative;
+  left: -110px;
+}
+
 #panel-1 {}
 
 #panel-2 {
