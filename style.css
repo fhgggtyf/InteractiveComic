@@ -1,3 +1,7 @@
+html {
+  width: 100vw;
+}
+
 body {
   font-family: Halvetica, Arial;
   background-color: rgb(26, 24, 64);
@@ -69,6 +73,10 @@ body {
   position: absolute;
 }
 
+#emily3{
+  z-index: 2;
+  position: absolute;
+}
 
 #emily2{
   z-index: 2;
@@ -98,8 +106,4 @@ body {
 .placeholder{
   position: relative;
   height:50vh;
-}
-
-#panel-3 {
-  top: 550px;
 }
