@@ -56,6 +56,11 @@ body {
   left: -110px;
 }
 
+#emily1{
+  z-index: 2;
+  position: absolute;
+}
+
 #cover-palm {
   z-index:0;
   width: 90vw;
