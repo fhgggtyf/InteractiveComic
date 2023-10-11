@@ -1,4 +1,5 @@
 body {
+  font-family: Halvetica, Arial;
   background-color: rgb(26, 24, 64);
   overflow-x: hidden;
 }
@@ -33,14 +34,16 @@ body {
   text-align: center;
 }
 
+/*title of the story*/
 #book-title {
+  font-family: 'Horror Type', sans-serif;
   z-index: 2;
   position: absolute;
   top: 70px;
   left: 35%;
-  color: white;
+  color: #802FB2;
   text-align: center;
-  font-size: 70px;
+  font-size: 150px;
 }
 
 #cover-emily {
