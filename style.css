@@ -64,6 +64,12 @@ body {
   left: 170px;
 }
 
+#emily1{
+  z-index: 2;
+  position: absolute;
+}
+
+
 #emily2{
   z-index: 2;
   position: absolute;
