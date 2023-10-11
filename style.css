@@ -42,7 +42,7 @@ body {
   z-index: 2;
   position: absolute;
   margin-bottom: 0px;
-  left: 32%;
+  left: 40%;
   color: white;
   text-align: center;
   font-size: 150px;
@@ -60,13 +60,8 @@ body {
   height: 620px;
   margin-top:5px;
   position: absolute;
-  top: 240px;
-  left: 90px;
-}
-
-#emily1{
-  z-index: 2;
-  position: absolute;
+  top: 280px;
+  left: 170px;
 }
 
 #cover-palm {
@@ -75,18 +70,18 @@ body {
   height: 700;
   margin-top:55px;
   position: absolute;
-  top: 70px;
-  left: 200px;
+  top: 80px;
+  left: 308px;
 }
 
 #cover-monster {
   z-index: 1;
-  width:290px;
-  height:290px;
+  width:350px;
+  height:350px;
 
   position: absolute;
-  left:750px;
-  top:470px;
+  left:980px;
+  top:490px;
 }
 
 .placeholder{
