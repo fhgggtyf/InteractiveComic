@@ -50,7 +50,7 @@ body {
 #subtitle{
   color:#D72525;
   padding: 0px;
-  margion-top:0px;
+  margin-top:0px;
   font-size:35px;
 }
 
@@ -62,6 +62,11 @@ body {
   position: absolute;
   top: 280px;
   left: 170px;
+}
+
+#emily2{
+  z-index: 2;
+  position: absolute;
 }
 
 #cover-palm {
