@@ -45,7 +45,7 @@ function scrollEvent() {
 	else if (sectionNum >= 10 && sectionNum <= 14) {
 		thirdPageElement.style.top = (currentTop3 + (pos - 5 * window.innerHeight)) + 'px';
 		thirdemily.style.top=(currentEmilyTop3/100*height + 0.75*height*(pos - 5*window.innerHeight)/window.innerHeight) + 'px';
-		thirdemily.style.left=(currentEmilyLeft3/100*width + 0.16*width*(pos - 5*window.innerHeight)/window.innerHeight) + 'px';
+		thirdemily.style.left=(currentEmilyLeft3/100*width + 0.15*width*(pos - 5*window.innerHeight)/window.innerHeight) + 'px';
 		thirdemily.style.height = 2700 - 2550*(pos - 5*window.innerHeight)/window.innerHeight + 'px';
 	}
 
