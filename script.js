@@ -22,32 +22,31 @@ function scrollEvent() {
 
 	// pos saves current scrollY position
 	let pos = window.scrollY;
-	let absPos=803*window.scrollY/window.innerHeight;
 	// width saves current web page width
-	let width = 1700;
+	let width = innerWidth;
 	// height saves current web page height
-	let height = 803;
+	let height = innerHeight;
 	// Calculate which section the user has scrolled to
 	// parseInt() function used to ignore decimals
-	let sectionNum = (absPos / height) * 2;
+	let sectionNum = (pos / height) * 2;
 
 	if (sectionNum >= 2 && sectionNum <= 4) {
 		firstPageElement.style.top = (currentTop1 + (pos - window.innerHeight)) + 'px';
+		firstemily.style.top=(currentEmilyTop1/100*height + height*(pos - window.innerHeight)/window.innerHeight) + 'px';
+		firstemily.style.left=(currentEmilyLeft1/100*width) + 'px';
 		firstemily.style.height = 200 - 150*(pos - window.innerHeight)/innerHeight + 'px';
-		firstemily.style.top=(currentEmilyTop1 + (pos - window.innerHeight)+20) + 'px';
-		firstemily.style.left=(currentEmilyLeft1) + 'px';
 	}
 	else if (sectionNum >= 6 && sectionNum <= 8) {
 		secondPageElement.style.top = (currentTop2 + (pos - 3 * window.innerHeight)) + 'px';
-		secondemily.style.top=(currentEmilyTop2 + (pos - 2.45*window.innerHeight)-pos/5+40) + 'px';
-		secondemily.style.left=(currentEmilyLeft2 + 170*(pos - 3*window.innerHeight)/innerHeight) + 'px';
+		secondemily.style.top=(currentEmilyTop2/100*height + 0.8*height*(pos - 3*window.innerHeight)/window.innerHeight) + 'px';
+		secondemily.style.left=(currentEmilyLeft2/100*width + 0.11*width*(pos - 3*window.innerHeight)/innerHeight) + 'px';
 		secondemily.style.height = 270 - 70*(pos - 3*window.innerHeight)/innerHeight + 'px';
 	}
 	else if (sectionNum >= 10 && sectionNum <= 14) {
 		thirdPageElement.style.top = (currentTop3 + (pos - 5 * window.innerHeight)) + 'px';
-		thirdemily.style.top=(currentEmilyTop3 + (pos - 4*window.innerHeight)-pos/5) + 'px';
-		thirdemily.style.left=(currentEmilyLeft3 + 880*(pos - 5*window.innerHeight)/window.innerHeight) + 'px';
-		thirdemily.style.height = 2700 - 2600*(pos - 5*window.innerHeight)/window.innerHeight + 'px';
+		thirdemily.style.top=(currentEmilyTop3/100*height + 0.75*height*(pos - 5*window.innerHeight)/window.innerHeight) + 'px';
+		thirdemily.style.left=(currentEmilyLeft3/100*width + 0.16*width*(pos - 5*window.innerHeight)/window.innerHeight) + 'px';
+		thirdemily.style.height = 2700 - 2550*(pos - 5*window.innerHeight)/window.innerHeight + 'px';
 	}
 
 }
