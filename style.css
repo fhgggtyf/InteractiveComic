@@ -53,7 +53,8 @@ body {
 }
 
 .emily{
-  transform-origin: top center;
+  left: 50%; /* Set the left position to 50% */
+  transform: translate(-50%, 0%);
 }
 
 #emily1{
