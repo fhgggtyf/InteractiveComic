@@ -1,11 +1,12 @@
 html {
-  width: 100vw;
+  width: 1700px;
 }
 
 body {
   font-family: Halvetica, Arial;
   background-color: rgb(26, 24, 64);
   overflow-x: hidden;
+  width: 1700px;
 }
 
 #nav {

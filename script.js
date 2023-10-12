@@ -2,6 +2,7 @@ let firstPageElement = document.getElementById('firstpage');
 let currentTop1 = parseInt(firstPageElement.style.top);
 let firstemily = document.getElementById('emily1');
 let currentEmilyTop1 = parseInt(firstemily.style.top);
+let currentEmilyLeft1 = parseInt(firstemily.style.left);
 
 let secondPageElement = document.getElementById('secondpage');
 let currentTop2 = parseInt(secondPageElement.style.top);
@@ -22,7 +23,7 @@ function scrollEvent() {
 	// pos saves current scrollY position
 	let pos = window.scrollY;
 	// width saves current web page width
-	let width = window.innerWidth;
+	let width = 1700;
 	// height saves current web page height
 	let height = window.innerHeight;
 	// Calculate which section the user has scrolled to
@@ -33,6 +34,7 @@ function scrollEvent() {
 		firstPageElement.style.top = (currentTop1 + (pos - height)) + 'px';
 		firstemily.style.height = 200 - (pos - height)/5.5 + 'px';
 		firstemily.style.top=(currentEmilyTop1/100*height + (pos - height)+10) + 'px';
+		firstemily.style.left=(currentEmilyLeft1/100*width) + 'px';
 	}
 	else if (sectionNum >= 5.78 && sectionNum <= 8) {
 		secondPageElement.style.top = (currentTop2 + (pos - 2.9 * height)) + 'px';
