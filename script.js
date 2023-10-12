@@ -25,7 +25,7 @@ function scrollEvent() {
 	// width saves current web page width
 	let width = 1700;
 	// height saves current web page height
-	let height = window.innerHeight;
+	let height = 803;
 	// Calculate which section the user has scrolled to
 	// parseInt() function used to ignore decimals
 	let sectionNum = (pos / height) * 2;
@@ -33,7 +33,7 @@ function scrollEvent() {
 	if (sectionNum >= 1.98 && sectionNum <= 4) {
 		firstPageElement.style.top = (currentTop1 + (pos - height)) + 'px';
 		firstemily.style.height = 200 - (pos - height)/5.5 + 'px';
-		firstemily.style.top=(currentEmilyTop1/100*height + (pos - height)+10) + 'px';
+		firstemily.style.top=(currentEmilyTop1 + (pos - height)+10) + 'px';
 		firstemily.style.left=(currentEmilyLeft1/100*width) + 'px';
 	}
 	else if (sectionNum >= 5.78 && sectionNum <= 8) {
