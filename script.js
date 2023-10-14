@@ -34,6 +34,15 @@ let emilyShock = document.getElementById('emily-shocked');
 let currentEmilyTop4 = parseInt(emilyShock.style.top);
 let monster = document.getElementById('monster-emb');
 
+<<<<<<< HEAD
+=======
+let fourthemilyDialog = document.getElementById('emily4Dialog');
+let fifthemilyDialog = document.getElementById('emily5Dialog');
+let sixthemilyDialog = document.getElementById('emily6Dialog');
+let emilyDialog4Top = parseInt(fourthemilyDialog.style.top);
+let emilyDialog5Top = parseInt(fifthemilyDialog.style.top);
+let emilyDialog6Top = parseInt(sixthemilyDialog.style.top);
+>>>>>>> 15b1a29ea42a9a63247593e2cc95976ca9643935
 
 document.addEventListener('scroll', scrollEvent);
 
@@ -124,12 +133,16 @@ function scrollEvent() {
 	}
 	else if (sectionNum >= 20 && sectionNum <= 22) {
 		caption.style.opacity = (pos - 10 * height) / height;
+		fourthemilyDialog.style.opacity = (pos - 10 * height) / height;
 		caption.src = "./Captions/7.png";
 	}
 
 	else if (sectionNum >= 22) {
 		lastSceneElement.style.top = (pos - 11 * height) + 'px';
 		monster.style.top = (pos - 11 * height) + 'px';
+		fourthemilyDialog.style.top = emilyDialog4Top / 100 * height + (pos - 11 * height) + 'px';
+		fifthemilyDialog.style.top = emilyDialog5Top / 100 * height + (pos - 11 * height) + 'px';
+		sixthemilyDialog.style.top = emilyDialog6Top / 100 * height + (pos - 11 * height) + 'px';
 		emilyShock.style.top = currentEmilyTop4 / 100 * height + (pos - 11 * height) + 'px';
 		if (sectionNum >= 25) {
 			caption.src = "./Captions/8.png";
@@ -139,6 +152,12 @@ function scrollEvent() {
 				caption.style.top = 1.1 * height + (pos - height) + 'px'
 				caption.style.left = "30vw";
 				emilyShock.src = "./img/EmilySmile.png";
+				fifthemilyDialog.style.opacity = 1;
+				sixthemilyDialog.style.opacity = 1;
+			}
+			else{
+				fifthemilyDialog.style.opacity = 0;
+				sixthemilyDialog.style.opacity = 0;
 			}
 		}
 		else {

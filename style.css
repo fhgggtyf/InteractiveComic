@@ -12,16 +12,15 @@ body {
 }
 
 .img-cover {
-/*  display: inline-block;*/
+  /*  display: inline-block;*/
   width: 70%;
   height: 70%;
-/*  margin-top:160px;*/
+  /*  margin-top:160px;*/
 }
-
 
 /*title of the story*/
 #book-title {
-  font-family: 'Horror Type', sans-serif;
+  font-family: "Horror Type", sans-serif;
   z-index: 2;
   position: absolute;
   margin-bottom: 0px;
@@ -30,27 +29,44 @@ body {
   text-align: center;
   font-size: 150px;
 }
-#subtitle{
-  color:#D72525;
+#subtitle {
+  color: #d72525;
   padding: 0px;
-  margin-top:0px;
-  font-size:35px;
+  margin-top: 0px;
+  font-size: 35px;
 }
 
+<<<<<<< HEAD
+=======
+#emily-shocked {
+  z-index: 2;
+  left: 10vw;
+  top: 10vh;
+  position: absolute;
+}
+
+#monster-emb {
+  z-index: 2;
+  right: 5vw;
+  opacity: 0;
+  position: absolute;
+}
+
+>>>>>>> 15b1a29ea42a9a63247593e2cc95976ca9643935
 #cover-emily {
-  z-index:2;
+  z-index: 2;
   width: 40vw;
   height: 45vw;
-  margin-top:5px;
+  margin-top: 5px;
   position: absolute;
-  top:25vw;
+  top: 25vw;
   left: 3vw;
 }
 #cover-palm {
-  z-index:0;
+  z-index: 0;
   width: 100vw;
   height: 710px;
-  margin-top:55px;
+  margin-top: 55px;
   position: absolute;
   top: 80px;
   left: 210px;
@@ -58,11 +74,11 @@ body {
 
 #cover-monster {
   z-index: 1;
-  width:19vw;
-  height:19vw;
+  width: 19vw;
+  height: 19vw;
   position: absolute;
-  left:80vw;
-  top:38vw;
+  left: 80vw;
+  top: 38vw;
 }
 .panel {
   position: relative;
@@ -71,42 +87,72 @@ body {
   text-align: center;
 }
 
-/*panel 6*/
-#panelBack{
-/*  width:70%;*/
-/*  height:70%;*/
-/*  right:;*/
+#emily-gaze {
+  width: 100vw;
+  height: 85vh;
 }
+<<<<<<< HEAD
 #emily-gaze{
 /*  width:60vw;*/
 /*  height:40vw;*/
 }
+=======
+>>>>>>> 15b1a29ea42a9a63247593e2cc95976ca9643935
 /*end of panel 6*/
 
-
-.emily{
+.emily {
   left: 50%; /* Set the left position to 50% */
   transform: translate(-50%, 0%);
 }
 
-#emily1{
+#emily1 {
   z-index: 2;
   position: absolute;
 }
 
-#emily2{
+#emily2 {
+  z-index: 2;
+  position: absolute;
+}
+<<<<<<< HEAD
+=======
+#emily2Dialog {
+  z-index: 2;
+  position: absolute;
+}
+#emily3Dialog {
+  z-index: 2;
+  position: absolute;
+}
+#emily4Dialog {
+  z-index: 2;
+  position: absolute;
+}
+#emily5Dialog {
+  z-index: 3;
+  position: absolute;
+}
+#emily6Dialog {
+  z-index: 2;
+  position: absolute;
+}
+>>>>>>> 15b1a29ea42a9a63247593e2cc95976ca9643935
+
+#emily3 {
   z-index: 2;
   position: absolute;
 }
 
-#emily3{
-  z-index: 2;
-  position: absolute;
-}
-
+<<<<<<< HEAD
 
 .placeholder{
   position: relative;
   height:50vh;
 }
 
+=======
+.placeholder {
+  position: relative;
+  height: 50vh;
+}
+>>>>>>> 15b1a29ea42a9a63247593e2cc95976ca9643935
