@@ -34,15 +34,14 @@ let emilyShock = document.getElementById('emily-shocked');
 let currentEmilyTop4 = parseInt(emilyShock.style.top);
 let monster = document.getElementById('monster-emb');
 
-<<<<<<< HEAD
-=======
+
 let fourthemilyDialog = document.getElementById('emily4Dialog');
 let fifthemilyDialog = document.getElementById('emily5Dialog');
 let sixthemilyDialog = document.getElementById('emily6Dialog');
 let emilyDialog4Top = parseInt(fourthemilyDialog.style.top);
 let emilyDialog5Top = parseInt(fifthemilyDialog.style.top);
 let emilyDialog6Top = parseInt(sixthemilyDialog.style.top);
->>>>>>> 15b1a29ea42a9a63247593e2cc95976ca9643935
+
 
 document.addEventListener('scroll', scrollEvent);
 
