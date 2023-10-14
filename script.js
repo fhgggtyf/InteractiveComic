@@ -16,6 +16,9 @@ let thirdemily = document.getElementById('emily3');
 let currentEmilyTop3 = parseInt(thirdemily.style.top);
 let currentEmilyLeft3 = parseInt(thirdemily.style.left);
 
+let lastPageElement = document.getElementById('panel1-8');
+let emilySmile = document.getElementById('emily-smile');
+
 document.addEventListener('scroll', scrollEvent);
 
 function scrollEvent() {
@@ -47,7 +50,7 @@ function scrollEvent() {
 		if(sectionNum<12.18){
 			thirdemily.style.opacity="1";
 			thirdemily.style.top=(currentEmilyTop3/100*height + 0.8*(pos - 5*height)) + 'px';
-			thirdemily.style.left=(currentEmilyLeft3/100*width + 0.000275*width*(pos - 5*height)) + 'px';
+			thirdemily.style.left=(currentEmilyLeft3/100*width + 0.000205*width*(pos - 5*height)) + 'px';
 			thirdemily.style.height = 2700 - 2550*(pos - 5*height)/height + 'px';
 		}
 		else{
@@ -55,5 +58,16 @@ function scrollEvent() {
 		}
 
 	}
+	else if(sectionNum>=24 && sectionNum<=28){
+		lastPageElement.style.top=(pos - 12 * height) + 'px'
+		if(sectionNum>=26){
+			emilySmile.style.opacity=(pos-13*height)/height;
+		}
+		else{
+			emilySmile.style.opacity=0;
+		}
+
+	}
+
 
 }
