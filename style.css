@@ -111,6 +111,14 @@ body {
   z-index: 2;
   position: absolute;
 }
+#emily2Dialog{
+  z-index: 2;
+  position: absolute;
+}
+#emily3Dialog{
+  z-index: 2;
+  position: absolute;
+}
 
 #emily3{
   z-index: 2;
