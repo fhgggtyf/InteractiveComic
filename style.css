@@ -38,12 +38,21 @@ body {
 
 #cover-emily {
   z-index:2;
-  width: 45vw;
+  width: 40vw;
   height: 45vw;
   margin-top:5px;
   position: absolute;
   top:25vw;
   left: 3vw;
+}
+#cover-palm {
+  z-index:0;
+  width: 100vw;
+  height: 710px;
+  margin-top:55px;
+  position: absolute;
+  top: 80px;
+  left: 210px;
 }
 
 #cover-monster {
@@ -60,17 +69,15 @@ body {
   height: 100vh;
   text-align: center;
 }
-#panel-2{
 
+/*panel 6*/
+
+#emily-gaze{
+  width:60vw;
+  height:40vw;
 }
+/*end of panel 6*/
 
-#panel-3{}
-#panel-4{}
-#panel-5{}
-#panel-6{}
-#panel-7{}
-#panel-8{}
-#panel-9{}
 
 .emily{
   left: 50%; /* Set the left position to 50% */
@@ -92,15 +99,7 @@ body {
   position: absolute;
 }
 
-#cover-palm {
-  z-index:0;
-  width: 100vw;
-  height: 710px;
-  margin-top:55px;
-  position: absolute;
-  top: 80px;
-  left: 220px;
-}
+
 
 
 .placeholder{
