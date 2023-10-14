@@ -10,7 +10,7 @@ The experience this project tries to create is the one that makes the user get i
 
 
 
-**Process**: 
+**Process**: The process of brainstorming, visualizing, and implementation was challenging. We were trying to figure out the story we wanted to tell our views. We decided to create an NYUAD monster story that has a twist. We wanted it to be relatable; we placed it on campus. Then, we decided to figure out the characters of the story. We tried to generate IA figures to get inspired, but we ended up creating the characters ourselves with some inspiration from AI generators. Then, we began designing the panels we wanted. We decided not to add all the different vectors into one PNG but rather to add them into the HTML and move them using Javascript. In total, we had nine panels; each panel was a crucial part of the story. Figuring out how to align everything in the HTML file was a big challenge, and it took us some time to figure out. We met many times after class and during weekends to work together on the project and help one another understand and figure things out. 
 
 **General Design**: The implementation of this website includes the applications of various techniques learnt in class including Photoshop, Illustrator, HTML, CSS and Javascrip. We started by deciding on the story type and the plot. Then, we used AI-generated images to find inspirations for the characters. With these geenrated images and some oneline images, we used Ai and Ps to process images to make them more comic-like.
 
