@@ -43,17 +43,10 @@ body {
   position: absolute;
 }
 
-#emily-smile{
-  z-index: 3;
-  left: 10vw;
-  top: 10vh;
-  opacity: 0;
-  position: absolute;
-}
-
 #monster-emb{
   z-index: 2;
   right: 5vw;
+  opacity: 0;
   position: absolute;
 }
 

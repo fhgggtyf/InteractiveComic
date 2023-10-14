@@ -1,3 +1,7 @@
+let caption = document.getElementById("captions");
+let captionTop = parseInt(caption.style.top);
+let captionLeft = parseInt(caption.style.left);
+
 let firstPageElement = document.getElementById('firstpage');
 let currentTop1 = parseInt(firstPageElement.style.top);
 let firstemily = document.getElementById('emily1');
@@ -17,7 +21,10 @@ let currentEmilyTop3 = parseInt(thirdemily.style.top);
 let currentEmilyLeft3 = parseInt(thirdemily.style.left);
 
 let lastPageElement = document.getElementById('panel1-8');
-let emilySmile = document.getElementById('emily-smile');
+let lastSceneElement = document.getElementById('torch');
+let emilyShock = document.getElementById('emily-shocked');
+let currentEmilyTop4 = parseInt(emilyShock.style.top);
+let monster = document.getElementById('monster-emb');
 
 document.addEventListener('scroll', scrollEvent);
 
@@ -33,40 +40,87 @@ function scrollEvent() {
 	// parseInt() function used to ignore decimals
 	let sectionNum = (pos / height) * 2;
 
+	caption.style.top=captionTop/100*height+pos-height+'px';
+	caption.style.left=captionLeft/100*width+'px';
+
 	if (sectionNum >= 2 && sectionNum <= 4) {
+		caption.style.opacity=2*(pos-height)/height;
+
 		firstPageElement.style.top = (currentTop1 + (pos - height)) + 'px'; //follow scroll 
 		firstemily.style.top=(currentEmilyTop1/100*height + (pos - height)+5) + 'px';
 		firstemily.style.left=((currentEmilyLeft1/100*width)+0.00007*width*(pos - height)) + 'px';
 		firstemily.style.height = 200 - 150*(pos - height)/height + 'px';
 	}
+	else if(sectionNum > 4 && sectionNum < 6){
+		caption.style.opacity=1-2*(pos-2*height)/height;
+	}
 	else if (sectionNum >= 6 && sectionNum <= 8) {
+		caption.src="./Captions/2.png";
+		caption.style.opacity=2*(pos-3*height)/height;
 		secondPageElement.style.top = (currentTop2 + (pos - 3 * height)) + 'px';
 		secondemily.style.top=(currentEmilyTop2/100*height + 0.8*(pos - 3*height)) + 'px';
 		secondemily.style.left=(currentEmilyLeft2/100*width + 0.00019*(pos - 3*height)*width) + 'px';
 		secondemily.style.height = 270 - 120*(pos - 3*height)/height + 'px';
 	}
+	else if(sectionNum > 8 && sectionNum < 10){
+		caption.style.opacity=1-2*(pos-4*height)/height;
+	}
 	else if (sectionNum >= 10 && sectionNum <= 14) {
+		caption.src="./Captions/3.png";
+		// alert(1)
+		caption.style.opacity=2*(pos-5*height)/height;
 		thirdPageElement.style.top = (currentTop3 + (pos - 5 * height)) + 'px';
 		if(sectionNum<12.18){
 			thirdemily.style.opacity="1";
 			thirdemily.style.top=(currentEmilyTop3/100*height + 0.8*(pos - 5*height)) + 'px';
 			thirdemily.style.left=(currentEmilyLeft3/100*width + 0.000205*width*(pos - 5*height)) + 'px';
 			thirdemily.style.height = 2700 - 2550*(pos - 5*height)/height + 'px';
+			if(sectionNum>11.5){
+				caption.src="./Captions/4.png";
+			}
 		}
 		else{
+			caption.src="./Captions/4.png";
 			thirdemily.style.opacity="0";
+			if(sectionNum>13.5){
+				caption.src="./Captions/5.png";
+			}
 		}
 
 	}
-	else if(sectionNum>=24 && sectionNum<=28){
-		lastPageElement.style.top=(pos - 12 * height) + 'px'
-		if(sectionNum>=26){
-			emilySmile.style.opacity=(pos-13*height)/height;
+	else if(sectionNum > 14 && sectionNum < 15){
+		caption.style.opacity=1-2*(pos-7*height)/height;
+	}
+	else if (sectionNum >= 15 && sectionNum <= 18) {
+		caption.src="./Captions/6.png";
+		caption.style.opacity=2*(pos-7.5*height)/height;
+
+	}
+	else if(sectionNum > 18 && sectionNum < 20){
+		caption.style.opacity=1-2*(pos-9*height)/height;
+	}
+	else if (sectionNum >= 20 && sectionNum <= 22) {
+		caption.style.opacity=(pos-10*height)/height;
+		caption.src="./Captions/7.png";
+	}
+
+	else if(sectionNum>=22){
+		lastSceneElement.style.top=(pos - 11 * height) + 'px';
+		monster.style.top=(pos - 11 * height) + 'px';
+		emilyShock.style.top=currentEmilyTop4/100*height+(pos - 11 * height) + 'px';
+		if(sectionNum>=25){
+			caption.src="./Captions/8.png";
+			monster.style.opacity=2*(pos-12.5*height)/height;
+			if(sectionNum>=26){
+				caption.src="./Captions/9.png";
+				caption.style.top=1.1*height+(pos - height) + 'px'
+				caption.style.left = "30vw";
+				emilyShock.src="./img/EmilySmile.png";
+			}
 		}
 		else{
-			emilySmile.style.opacity=0;
-		}
-
+			emilyShock.src="./img/EmilyShocked.png";
+		}			
 	}
 
 
