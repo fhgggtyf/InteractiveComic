@@ -16,11 +16,19 @@ The experience this project tries to create is the one that makes the user get i
 
 **Interactivity**: The interactivity of this website aims at showing the motions of the characters and making the story more interesting. The most prominant interaction is the walking motion of Emily; it indicates the progress of the story as Emily walks.
 
-**Comic Sensibility**:
+**Comic Sensibility**: Our comin mainly focuses on the sequance of the pannels to empower the overall narritive of the story line. We used realisitc figure for the backgrounds and iconic ones for the characters and it gave a nive contrats to the diffrent pannels. 
 
 **Work Distribution**:
+Shahd: I helped write the story and create the character's illustrations and some panels. I wrote some captions for the story and some dialogue. I also helped in the coding process and styling of the website and the README file.
 
+Yupu: I helped write the story and in creating the panels mainly the backgrounds, the design for the captions, and the dialogue. I also helped with the code, the website, and the ReadMe file.
+
+Jason Xia: My main role was to work on the pannels' animation mainly the movement of Emily and the ghost throughout the story. I also helped in designing the website's overall look and functionality. 
+
+Peirre: I helped write the story, and created some panels, and helped in the code. 
+
+We all helped in brainstorming the story and the implementation process. 
 
 
 **Reflection and Evaluation**: 
-
+We are satisfired with the overall result of the website. We think if we had more time we could add sound and some more interactivity to it. It was a challange to get all of what we had in mind done but we maneged. 
