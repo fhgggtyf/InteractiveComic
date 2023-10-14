@@ -44,9 +44,16 @@ function scrollEvent() {
 	}
 	else if (sectionNum >= 10 && sectionNum <= 14) {
 		thirdPageElement.style.top = (currentTop3 + (pos - 5 * height)) + 'px';
-		thirdemily.style.top=(currentEmilyTop3/100*height + 0.8*(pos - 5*height)) + 'px';
-		thirdemily.style.left=(currentEmilyLeft3/100*width + 0.000265*width*(pos - 5*height)) + 'px';
-		thirdemily.style.height = 2700 - 2550*(pos - 5*height)/height + 'px';
+		if(sectionNum<12.18){
+			thirdemily.style.opacity="1";
+			thirdemily.style.top=(currentEmilyTop3/100*height + 0.8*(pos - 5*height)) + 'px';
+			thirdemily.style.left=(currentEmilyLeft3/100*width + 0.000275*width*(pos - 5*height)) + 'px';
+			thirdemily.style.height = 2700 - 2550*(pos - 5*height)/height + 'px';
+		}
+		else{
+			thirdemily.style.opacity="0";
+		}
+
 	}
 
 }
