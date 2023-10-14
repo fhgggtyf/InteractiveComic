@@ -16,6 +16,9 @@ let thirdemily = document.getElementById('emily3');
 let currentEmilyTop3 = parseInt(thirdemily.style.top);
 let currentEmilyLeft3 = parseInt(thirdemily.style.left);
 
+let lastPageElement = document.getElementById('panel1-8');
+let emilySmile = document.getElementById('emily-smile');
+
 document.addEventListener('scroll', scrollEvent);
 
 function scrollEvent() {
@@ -55,5 +58,16 @@ function scrollEvent() {
 		}
 
 	}
+	else if(sectionNum>=24 && sectionNum<=28){
+		lastPageElement.style.top=(pos - 12 * height) + 'px'
+		if(sectionNum>=26){
+			emilySmile.style.opacity=(pos-13*height)/height;
+		}
+		else{
+			emilySmile.style.opacity=0;
+		}
+
+	}
+
 
 }
