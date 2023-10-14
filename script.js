@@ -34,6 +34,7 @@ let emilyShock = document.getElementById('emily-shocked');
 let currentEmilyTop4 = parseInt(emilyShock.style.top);
 let monster = document.getElementById('monster-emb');
 
+
 document.addEventListener('scroll', scrollEvent);
 
 function scrollEvent() {
@@ -144,6 +145,5 @@ function scrollEvent() {
 			emilyShock.src = "./img/EmilyShocked.png";
 		}
 	}
-
-
 }
+

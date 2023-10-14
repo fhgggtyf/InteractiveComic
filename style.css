@@ -4,6 +4,7 @@ body {
   overflow-x: hidden;
 }
 
+
 .img {
   position: relative;
   width: 75vw;
@@ -34,20 +35,6 @@ body {
   padding: 0px;
   margin-top:0px;
   font-size:35px;
-}
-
-#emily-shocked{
-  z-index: 2;
-  left: 10vw;
-  top: 10vh;
-  position: absolute;
-}
-
-#monster-emb{
-  z-index: 2;
-  right: 5vw;
-  opacity: 0;
-  position: absolute;
 }
 
 #cover-emily {
@@ -91,9 +78,9 @@ body {
 /*  right:;*/
 }
 #emily-gaze{
-  width:100vw;
-  height:85vh; 
-} 
+/*  width:60vw;*/
+/*  height:40vw;*/
+}
 /*end of panel 6*/
 
 
@@ -111,14 +98,6 @@ body {
   z-index: 2;
   position: absolute;
 }
-#emily2Dialog{
-  z-index: 2;
-  position: absolute;
-}
-#emily3Dialog{
-  z-index: 2;
-  position: absolute;
-}
 
 #emily3{
   z-index: 2;
@@ -126,9 +105,8 @@ body {
 }
 
 
-
-
 .placeholder{
   position: relative;
   height:50vh;
 }
+
