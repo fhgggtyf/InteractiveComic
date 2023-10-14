@@ -43,17 +43,10 @@ body {
   position: absolute;
 }
 
-#emily-smile{
-  z-index: 3;
-  left: 10vw;
-  top: 10vh;
-  opacity: 0;
-  position: absolute;
-}
-
 #monster-emb{
   z-index: 2;
   right: 5vw;
+  opacity: 0;
   position: absolute;
 }
 
@@ -98,15 +91,9 @@ body {
 /*  right:;*/
 }
 #emily-gaze{
-<<<<<<< HEAD
-/*  width:60vw;*/
-/*  height:40vw;*/
-}
-=======
   width:100vw;
   height:85vh; 
 } 
->>>>>>> e4c2eb194e837cb08beaeac1b0a93c57dc7d8f3f
 /*end of panel 6*/
 
 
