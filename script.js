@@ -63,6 +63,7 @@ function scrollEvent() {
 		caption.style.opacity = 0;
 	}
 	else if (sectionNum >= 2 && sectionNum <= 4) {
+		caption.src = "./Captions/1.png";
 		caption.style.opacity = 2 * (pos - height) / height;
 
 		firstPageElement.style.top = (currentTop1 + (pos - height)) + 'px'; //follow scroll 
